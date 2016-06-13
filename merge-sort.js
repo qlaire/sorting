@@ -31,13 +31,9 @@ function mergeSort(array) {
   if(array.length > 1){ //split into two
     firstHalf = split(array)[0];
     secondHalf = split(array)[1];
-    return merge(mergeSort(firstHalf),mergeSort(secondHalf));
+    return merge(mergeSort(firstHalf), mergeSort(secondHalf));
   }
   else{
     return array;
   }
-  //merege the two
-
-
-
 }

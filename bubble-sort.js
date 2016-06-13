@@ -1,4 +1,4 @@
-function bubbleSort(arr, upToIndex){
+function bubbleSort(arr){
   var swapped = false;
   var upToIndex = arr.length;
   //needs nested for loop
@@ -10,7 +10,7 @@ function bubbleSort(arr, upToIndex){
       }
    }
    upToIndex--;
-   if(swapped == false){
+   if (swapped === false){
     return arr; //means its all sorted
    } else {
     swapped = false;
@@ -24,4 +24,4 @@ var swap = function(arr, index1, index2){
   arr[index1] = arr[index2];
   arr[index2] = temp;
   return arr;
-}
+};
